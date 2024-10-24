@@ -61,16 +61,19 @@
 
     .links {
       margin-top: 20px;
+      display: flex; /* Use flexbox for the links */
+      flex-wrap: wrap; /* Allow wrapping to the next line */
+      justify-content: center; /* Center align the items */
     }
 
     .links a {
       display: inline-block;
-      margin: 0 15px;
+      margin: 10px; /* Space around the images */
     }
 
     .links img {
-      width: 70px; /* Larger social icons */
-      height: 70px;
+      width: 100px; /* Enlarge social icons */
+      height: 100px; /* Maintain aspect ratio */
       transition: transform 0.3s ease;
       border-radius: 10px;
     }
@@ -120,12 +123,7 @@
   </div>
 
   <div class="container">
-    <div class="logo">
-      <!-- Making the logo clickable to redirect to the main page -->
-      <a href="./main-page.html">
-        <img src="./img1.png" alt="Logo">
-      </a>
-    </div>
+   
     <div class="links">
       <a href="https://www.instagram.com/Anjali_Psyche_Talks_" target="_blank">
         <img src="./insta-image.jpeg" alt="Instagram">
