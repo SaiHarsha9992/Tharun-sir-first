@@ -127,31 +127,26 @@
       top: 30px;
       padding-top: 10px; /* Add 10px padding at the top */
     }
-    
+
     /* New text styles */
     .story-text {
       margin-top: 20px; /* Space above the text */
       font-size: 24px; /* Increased text size for "Your Story Matters" */
       color: white; /* Text color */
       display: flex; /* Use flexbox for alignment */
-      justify-content: center; /* Center align the text */
-      align-items: center; /* Center align the items vertically */
-      flex-wrap: wrap; /* Allow wrapping of items */
+      flex-direction: column; /* Stack the texts vertically */
+      align-items: center; /* Center align the items */
+    }
+
+    .story-text .sub-text {
+      font-size: 16px; /* Smaller text size for Share, Heal, Grow */
+      display: flex; /* Use flexbox for alignment */
+      align-items: center; /* Center align vertically */
+      margin-top: 5px; /* Space above each sub-text */
     }
 
     .tick {
       margin: 0 5px; /* Space between text and tick symbol */
-    }
-  
-    .story-text span {
-      margin-right: 10px; /* Space between text elements */
-    }
-
-    .small-text {
-      font-size: 14px; /* Smaller font size for "Share," "Heal," and "Grow" */
-      color: white; /* Text color */
-      display: flex; /* Use flexbox for alignment */
-      align-items: center; /* Center align the items vertically */
     }
 
     /* Media Queries for Responsive Design */
@@ -215,16 +210,16 @@
 
     <!-- Text below the second iframe -->
     <div class="story-text">
-      <span>Your Story Matters </span>
-      <div class="small-text">
+      <span>Your Story Matters</span>
+      <div class="sub-text">
         <span>Share</span>
         <span class="tick">✔️</span>
       </div>
-      <div class="small-text">
+      <div class="sub-text">
         <span>Heal</span>
         <span class="tick">✔️</span>
       </div>
-      <div class="small-text">
+      <div class="sub-text">
         <span>Grow</span>
         <span class="tick">✔️</span>
       </div>
