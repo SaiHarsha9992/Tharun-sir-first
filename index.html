@@ -50,7 +50,7 @@
       align-items: center;
       padding: 20px;
       border-radius: 10px;
-      margin-top:10px
+      margin-top: 10px;
       position: relative; /* Relative positioning for absolute child elements */
     }
 
@@ -114,7 +114,7 @@
       object-fit: cover;
     }
 
-   iframe {
+    iframe {
       border: none; /* Remove borders */
       width: 100%; /* Full width */
       height: 200px; /* Set a fixed height for the iframes */
@@ -127,15 +127,16 @@
       top: 30px;
       padding-top: 10px; /* Add 10px padding at the top */
     }
+    
     /* New text styles */
     .story-text {
       margin-top: 20px; /* Space above the text */
-      
-      font-size: 18px; /* Text size */
+      font-size: 24px; /* Increased text size for "Your Story Matters" */
       color: white; /* Text color */
       display: flex; /* Use flexbox for alignment */
       justify-content: center; /* Center align the text */
       align-items: center; /* Center align the items vertically */
+      flex-wrap: wrap; /* Allow wrapping of items */
     }
 
     .tick {
@@ -143,7 +144,14 @@
     }
   
     .story-text span {
-      margin-right: 10px;
+      margin-right: 10px; /* Space between text elements */
+    }
+
+    .small-text {
+      font-size: 14px; /* Smaller font size for "Share," "Heal," and "Grow" */
+      color: white; /* Text color */
+      display: flex; /* Use flexbox for alignment */
+      align-items: center; /* Center align the items vertically */
     }
 
     /* Media Queries for Responsive Design */
@@ -208,13 +216,18 @@
     <!-- Text below the second iframe -->
     <div class="story-text">
       <span>Your Story Matters </span>
-      <span> </span>
-      <span>Share</span>
-      <span class="tick">✔️</span>
-      <span>Heal</span>
-      <span class="tick">✔️</span>
-      <span>Grow</span>
-      <span class="tick">✔️</span>
+      <div class="small-text">
+        <span>Share</span>
+        <span class="tick">✔️</span>
+      </div>
+      <div class="small-text">
+        <span>Heal</span>
+        <span class="tick">✔️</span>
+      </div>
+      <div class="small-text">
+        <span>Grow</span>
+        <span class="tick">✔️</span>
+      </div>
     </div>
   </div>
 </body>
