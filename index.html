@@ -24,9 +24,13 @@
     .banner {
       position: absolute;
       top: 10px;
-      width: 100%;
+      width: 80%; /* Set the width of the banner */
+      background-color: #de89a1; /* Background color for the banner */
       display: flex;
       justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
     }
 
     .banner img {
@@ -37,7 +41,7 @@
 
     .container {
       text-align: center;
-      margin-top: 120px; /* Adds space after the banner */
+      margin-top: 160px; /* Adds space after the banner */
     }
 
     .logo img {
@@ -83,6 +87,18 @@
       background-color: #007bff;
       color: white;
     }
+
+    .transparent-img {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0.3; /* Make the image light and transparent */
+    }
+
+    .transparent-img img {
+      max-width: 150px;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -117,7 +133,10 @@
       <a href="./main-page.html">More Info</a>
     </div>
   </div>
+
+  <!-- Transparent image -->
+  <div class="transparent-img">
+    <img src="./img2.png" alt="Transparent Image">
+  </div>
 </body>
 </html>
-
-
