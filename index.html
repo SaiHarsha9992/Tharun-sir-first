@@ -41,6 +41,7 @@
 
     .container {
       text-align: center;
+      background-color: #de89a1;
       width: 30%;
       height: 100vh; /* Full window height */
       display: flex;
@@ -50,11 +51,6 @@
       padding: 20px;
       border-radius: 10px;
       position: relative; /* Relative positioning for absolute child elements */
-      overflow: hidden; /* Hide overflow to keep the background image contained */
-      background-color: rgba(222, 137, 161, 0.8); /* Set background color with transparency */
-      background-image: url('./img2.png'); /* Set the transparent image as a background */
-      background-size: cover; /* Cover the entire container */
-      background-position: center; /* Center the background image */
     }
 
     .logo img {
@@ -101,6 +97,18 @@
       background-color: #007bff;
       color: white;
     }
+
+    .transparent-img {
+      position: absolute; /* Position it absolutely within the container */
+      bottom: 20px; /* Adjust as needed */
+      right: 20px; /* Adjust as needed */
+      opacity: 0.3; /* Make the image light and transparent */
+    }
+
+    .transparent-img img {
+      max-width: 80px; /* Smaller transparent image */
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -112,6 +120,12 @@
   </div>
 
   <div class="container">
+    <div class="logo">
+      <!-- Making the logo clickable to redirect to the main page -->
+      <a href="./main-page.html">
+        <img src="./img1.png" alt="Logo">
+      </a>
+    </div>
     <div class="links">
       <a href="https://www.instagram.com/Anjali_Psyche_Talks_" target="_blank">
         <img src="./insta-image.jpeg" alt="Instagram">
@@ -127,6 +141,11 @@
     <!-- Additional More Info link that redirects to the main page -->
     <div class="more-info">
       <a href="./main-page.html">More Info</a>
+    </div>
+
+    <!-- Transparent image inside the container -->
+    <div class="transparent-img">
+      <img src="./img2.png" alt="Transparent Image">
     </div>
   </div>
 </body>
