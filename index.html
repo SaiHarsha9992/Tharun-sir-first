@@ -114,14 +114,17 @@
       object-fit: cover;
     }
 
-    /* Iframe styles */
-    iframe {
+   iframe {
       border: none; /* Remove borders */
       width: 100%; /* Full width */
       height: 200px; /* Set a fixed height for the iframes */
       margin: 10px 0; /* Space above and below */
     }
 
+    /* Add padding-top specifically for the first iframe */
+    .first-iframe {
+      padding-top: 10px; /* Add 10px padding at the top */
+    }
     /* New text styles */
     .story-text {
       margin-top: 20px; /* Space above the text */
@@ -173,7 +176,7 @@
 
   <div class="container">
     <!-- Top iframe -->
-    <iframe src="https://lottie.host/embed/4ab9c2bd-7068-4e4b-b402-d97c206d1608/CClRuEtXGB.json"></iframe>
+    <iframe class="first-iframe" src="https://lottie.host/embed/4ab9c2bd-7068-4e4b-b402-d97c206d1608/CClRuEtXGB.json"></iframe>
 
     <div class="links">
       <a href="https://www.instagram.com/Anjali_Psyche_Talks_" target="_blank">
