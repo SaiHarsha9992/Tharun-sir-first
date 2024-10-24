@@ -121,6 +121,20 @@
       margin: 10px 0; /* Space above and below */
     }
 
+    /* New text styles */
+    .story-text {
+      margin-top: 20px; /* Space above the text */
+      font-size: 18px; /* Text size */
+      color: white; /* Text color */
+      display: flex; /* Use flexbox for alignment */
+      justify-content: center; /* Center align the text */
+      align-items: center; /* Center align the items vertically */
+    }
+
+    .tick {
+      margin: 0 5px; /* Space between text and tick symbol */
+    }
+
     /* Media Queries for Responsive Design */
     @media (max-width: 768px) {
       .container {
@@ -179,6 +193,17 @@
 
     <!-- Bottom iframe -->
     <iframe src="https://lottie.host/embed/1b5e0e62-5e97-4cfb-be11-f382aa7ab0e6/U291gUIIpd.json"></iframe>
+
+    <!-- Text below the second iframe -->
+    <div class="story-text">
+      <span>Your Story Matters</span>
+      <span class="tick">✔️</span>
+      <span>Share</span>
+      <span class="tick">✔️</span>
+      <span>Heal</span>
+      <span class="tick">✔️</span>
+      <span>Grow</span>
+    </div>
 
     <!-- Transparent image inside the container -->
     <div class="transparent-img">
