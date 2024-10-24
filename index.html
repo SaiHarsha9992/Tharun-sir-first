@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centered Logo with Links</title>
-<style>
+  <title>Centered Logo with Social Links</title>
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -37,20 +37,18 @@
     .links a {
       display: inline-block;
       margin: 0 15px;
-      padding: 10px 20px;
-      font-size: 18px;
-      color: #fff;
-      text-decoration: none;
-      background-color: #007bff;
-      border-radius: 30px;
-      transition: background-color 0.3s ease;
     }
 
-    .links a:hover {
-      background-color: #0056b3;
+    .links img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .links a:hover img {
+      transform: scale(1.1);
     }
   </style>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
@@ -58,9 +56,15 @@
       <img src="./img1.png" alt="Logo">
     </div>
     <div class="links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="./instagram-logo.png" alt="Instagram">
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="./youtube-logo.png" alt="YouTube">
+      </a>
+      <a href="https://web.whatsapp.com" target="_blank">
+        <img src="./whatsapp-logo.png" alt="WhatsApp">
+      </a>
     </div>
   </div>
 </body>
