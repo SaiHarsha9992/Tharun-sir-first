@@ -42,8 +42,9 @@
     .container {
       text-align: center;
       background-color: #de89a1;
-      width: 30%;
-      height: 100vh; /* Full window height */
+      width: 90%; /* Change to responsive width */
+      max-width: 400px; /* Limit max width for larger screens */
+      height: auto; /* Allow height to adjust based on content */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -72,8 +73,8 @@
     }
 
     .links img {
-      width: 100px; /* Enlarge social icons */
-      height: 100px; /* Maintain aspect ratio */
+      width: 80px; /* Set a smaller size for icons */
+      height: 80px; /* Maintain aspect ratio */
       transition: transform 0.3s ease;
       border-radius: 10px;
     }
@@ -112,6 +113,29 @@
       max-width: 80px; /* Smaller transparent image */
       object-fit: cover;
     }
+
+    /* Media Queries for responsiveness */
+    @media (min-width: 600px) {
+      .links img {
+        width: 100px; /* Larger size for larger screens */
+        height: 100px; /* Maintain aspect ratio */
+      }
+      
+      .container {
+        width: 50%; /* Set wider width on larger screens */
+      }
+    }
+
+    @media (min-width: 900px) {
+      .container {
+        width: 30%; /* Set to a smaller width for large screens */
+      }
+
+      .links img {
+        width: 120px; /* Larger size for very large screens */
+        height: 120px; /* Maintain aspect ratio */
+      }
+    }
   </style>
 </head>
 <body>
@@ -123,7 +147,6 @@
   </div>
 
   <div class="container">
-   
     <div class="links">
       <a href="https://www.instagram.com/Anjali_Psyche_Talks_" target="_blank">
         <img src="./insta-image.jpeg" alt="Instagram">
