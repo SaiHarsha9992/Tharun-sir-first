@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centered Logo with Social Links</title>
+  <title>Centered Logo with Social Links and Banner</title>
   <style>
     * {
       margin: 0;
@@ -14,14 +14,30 @@
     body {
       font-family: 'Arial', sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       background-color: #f0f0f0;
     }
 
+    .banner {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner img {
+      max-width: 100%;
+      max-height: 100px;
+      object-fit: cover;
+    }
+
     .container {
       text-align: center;
+      margin-top: 120px; /* Adds space after the banner */
     }
 
     .logo img {
@@ -44,44 +60,64 @@
       height: 50px;
       transition: transform 0.3s ease;
     }
-.banner {
-      position: absolute;
-      top: 10px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
 
-    .banner img {
-      max-width: 100%;
-      max-height: 100px;
-      object-fit: cover;
-    }
     .links a:hover img {
       transform: scale(1.1);
+    }
+
+    .more-info {
+      margin-top: 20px;
+    }
+
+    .more-info a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #007bff;
+      border: 1px solid #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .more-info a:hover {
+      background-color: #007bff;
+      color: white;
     }
   </style>
 </head>
 <body>
- <div class="banner">
-    <img src="./img3.png" alt="Banner">
+  <!-- Banner aligned at the top and centered -->
+  <div class="banner">
+    <a href="./main-page.html">
+      <img src="./banner-image.jpeg" alt="Banner">
+    </a>
   </div>
-  <div class="container">
 
+  <div class="container">
     <div class="logo">
-      <img src="./img1.png" alt="Logo">
+      <!-- Making the logo clickable to redirect to the main page -->
+      <a href="./main-page.html">
+        <img src="./img1.png" alt="Logo">
+      </a>
     </div>
     <div class="links">
-      <a href="https://www.instagram.com" target="_blank">
+      <a href="https://www.instagram.com/Anjali_Psyche_Talks_" target="_blank">
         <img src="./insta-image.jpeg" alt="Instagram">
       </a>
-      <a href="https://www.youtube.com" target="_blank">
+      <a href="https://www.youtube.com/@ANJALIPSYCHETALKS" target="_blank">
         <img src="./youtube logo.jpg" alt="YouTube">
       </a>
-      <a href="https://web.whatsapp.com" target="_blank">
+      <a href="https://web.whatsapp.com/Anjali psyche talks" target="_blank">
         <img src="./Whatsapp logo.png" alt="WhatsApp">
       </a>
+    </div>
+
+    <!-- Additional More Info link that redirects to the main page -->
+    <div class="more-info">
+      <a href="./main-page.html">More Info</a>
     </div>
   </div>
 </body>
 </html>
+
+
